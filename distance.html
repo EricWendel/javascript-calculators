@@ -6,21 +6,34 @@
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="style.css">
+ <script src="script.js"></script>
  <title>Distance</title>
 </head>
 
 <body>
 	<h1>Distance Calculator</h1>
-	<div class="container">
+	<div class="container1">
 		<div class="center">
-			<p>
-				x1: <input type="text"  name="x1" id="x1" />
-				y1: <input type="text"  name="y1" id="y1" />
-			</p>
-			<p>
-				x2: <input type="text"  name="x2" id="x2" />
-				y2: <input type="text"  name="y2" id="y2" />
-			</p>
+			<form action="" id="distance-form">
+				<p>
+					x1: <input type="number"  name="x1" id="x1" />
+					y1: <input type="number"  name="y1" id="y1" />
+				</p>
+				<p>
+					x2: <input type="number"  name="x2" id="x2" />
+					y2: <input type="number"  name="y2" id="y2" />
+				</p>
+			</form>
+		</div>
+	</div>
+	<div class="container2">
+		<div class="center">
+			<button class="button2" onclick="distance()">Calculate!</button>
+		</div>
+	</div>
+	<div class="container3">
+		<div class="center">
+			<div id="ans"></div>
 		</div>
 	</div>
 </body>
