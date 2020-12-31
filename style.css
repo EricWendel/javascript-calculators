@@ -4,3 +4,24 @@ h1 {
   font-family: arial;
 	font-size: 60px;
 }
+
+.container{
+	height: 150px;
+	position: relative;
+}
+
+.center{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+
+.button1{
+	color: white;
+	padding: 30px;
+	margin: 10px;
+	background-color: grey;
+}
