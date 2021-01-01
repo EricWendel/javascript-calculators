@@ -10,6 +10,7 @@ function distance(){
 
 function formChanged(id){
 	document.getElementById(id).style.backgroundColor = "IndianRed";
+	document.getElementById('ansbox').style.borderColor = "IndianRed";
 }
 
 function formSubmitted(){
@@ -17,4 +18,5 @@ function formSubmitted(){
 	document.getElementById("y1").style.backgroundColor = "PaleGreen";
 	document.getElementById("x2").style.backgroundColor = "PaleGreen";
 	document.getElementById("y2").style.backgroundColor = "PaleGreen";
+	document.getElementById('ansbox').style.borderColor = "PaleGreen";
 }
