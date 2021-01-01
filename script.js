@@ -7,3 +7,14 @@ function distance(){
 	let dist = Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1, 2));
 	document.getElementById('ans').innerHTML = "Answer: " + dist;
 }
+
+function formChanged(id){
+	document.getElementById(id).style.backgroundColor = "IndianRed";
+}
+
+function formSubmitted(){
+	document.getElementById("x1").style.backgroundColor = "PaleGreen";
+	document.getElementById("y1").style.backgroundColor = "PaleGreen";
+	document.getElementById("x2").style.backgroundColor = "PaleGreen";
+	document.getElementById("y2").style.backgroundColor = "PaleGreen";
+}

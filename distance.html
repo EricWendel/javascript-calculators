@@ -16,19 +16,19 @@
 		<div class="center">
 			<form action="" id="distance-form">
 				<p>
-					x1: <input type="number"  name="x1" id="x1" />
-					y1: <input type="number"  name="y1" id="y1" />
+					x1: <input type="number"  name="x1" id="x1" onchange="formChanged('x1')"/>
+					y1: <input type="number"  name="y1" id="y1" onchange="formChanged('y1')"/>
 				</p>
 				<p>
-					x2: <input type="number"  name="x2" id="x2" />
-					y2: <input type="number"  name="y2" id="y2" />
+					x2: <input type="number"  name="x2" id="x2" onchange="formChanged('x2')"/>
+					y2: <input type="number"  name="y2" id="y2" onchange="formChanged('y2')"/>
 				</p>
 			</form>
 		</div>
 	</div>
 	<div class="container2">
 		<div class="center">
-			<button class="button2" onclick="distance()">Calculate!</button>
+			<button class="button2" onclick="distance();formSubmitted();">Calculate!</button>
 		</div>
 	</div>
 	<div class="container3">

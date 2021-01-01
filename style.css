@@ -37,6 +37,7 @@ h1{
 }
 
 .button2{
-	color: green;
+	color: PaleGreen;
+	background-color: gray;
 	padding: 10px 100px;
 }
