@@ -5,6 +5,15 @@ h1{
 	font-size: 60px;
 }
 
+input[type=number]{
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+.input{
+	margin: 15px;
+}
+
 .answer{
 	font-weight: bold;
 	font-family: arial;
@@ -28,6 +37,19 @@ h1{
 	position: relative;
 	width: 240px;
 	border: 3px solid IndianRed;
+}
+
+.container4{
+	margin: 5px;
+	padding: 15px;
+	height: 120px;
+	width: 300px;
+}
+
+.container5{
+	font-weight: bold;
+	padding: 4px;
+	width: 210px;
 }
 
 .center{
