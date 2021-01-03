@@ -10,6 +10,36 @@ input[type=number]{
 	border-radius: 10px;
 }
 
+html, body{
+	height: 100%;
+	margin: 0;
+	background-color: linen;
+}
+
+.content{
+	min-height: 100%;
+}
+
+.content-inside{
+	padding: 20px;
+	padding-bottom: 50px;
+}
+
+footer{
+	background-color: SteelBlue;
+}
+
+.foot-button{
+	margin: 10px;
+	padding: 5px;
+	background-color: linen;
+}
+
+.footer{
+	height: 50px;
+	margin-top: -50px;
+}
+
 .input{
 	margin: 15px;
 }
@@ -72,10 +102,4 @@ input[type=number]{
 	color: white;
 	background-color: gray;
 	padding: 10px 100px;
-}
-
-.button3{
-	color: white;
-	background-color: IndianRed;
-	padding: 10px 30px;
 }
