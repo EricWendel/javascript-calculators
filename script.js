@@ -4,18 +4,32 @@ function distance(){
 	let y1 = theForm.elements[1].value;
 	let x2 = theForm.elements[2].value;
 	let y2 = theForm.elements[3].value;
+
 	if(x1 == 0){
-		document.getElementById('x1').value = 0;
+		document.getElementById('x1').value = 0;  // Set empty input to 0
+	}
+	else{
+		document.getElementById('x1').value = x1.replace(/^0+/, '');  // Trim leading zeros
 	}
 	if(x2 == 0){
 		document.getElementById('x2').value = 0;
 	}
+	else{
+		document.getElementById('x2').value = x2.replace(/^0+/, '');
+	}
 	if(y1 == 0){
 		document.getElementById('y1').value = 0;
+	}
+	else{
+		document.getElementById('y1').value = y1.replace(/^0+/, '');
 	}
 	if(y2 == 0){
 		document.getElementById('y2').value = 0;
 	}
+	else{
+		document.getElementById('y2').value = y2.replace(/^0+/, '');
+	}
+
 	let dist = Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1, 2));
 	document.getElementById('ans').innerHTML = "Answer: " + dist;
 }
