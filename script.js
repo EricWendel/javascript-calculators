@@ -34,6 +34,22 @@ function distance(){
 	document.getElementById('ans').innerHTML = "Answer: " + dist;
 }
 
+function makeChange(){
+	let theForm = document.forms["change-form"];
+	let cents = theForm.elements[0].value;
+	let quarters = Math.floor(cents/25);
+	let pennies = 0;
+	let nickels = 0;
+	let dimes = 0;
+
+	document.getElementById('ans-q').innerHTML = "Quarters: " + quarters;
+}
+
+function changeFormSubmitted(){  //  TODO:: Make formSubmitted() work for all potential calculators
+	document.getElementById("cents").style.backgroundColor = "PaleGreen";
+	document.getElementById('ansbox').style.borderColor = "PaleGreen";
+}
+
 function formChanged(id){
 	document.getElementById(id).style.backgroundColor = "IndianRed";
 	document.getElementById('ansbox').style.borderColor = "IndianRed";

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <script src="script.js"></script>
+ <title>Distance</title>
+ <link rel="shortcut icon" type="image/png" href="calcFavicon.png"/>
+</head>
+
+<body>
+	<div class="content">
+		<div class="content-inside">
+			
+			<h1>Change Calculator</h1>
+			<div class="container1">
+				<div class="center">
+					<form action="" id="change-form">
+						<div class="container4">
+							<div class="center">
+								<div class="container5">
+									amount in cents: <input type="number"  name="cents" id="cents" onchange="formChanged('cents')"/>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="container2">
+				<div class="center">
+					<button class="button2" onclick="makeChange();changeFormSubmitted();">Calculate!</button>
+				</div>
+			</div>
+			<div class="container2">
+				<div class="center">
+					<div class="container3" id="ansbox">
+						<div id="ans-q" class="answer">Quarters: </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<button class="foot-button" onclick="document.location='index.html'">Home</button>
+	</footer>
+</body>
+
+</html>
