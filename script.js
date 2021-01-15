@@ -37,18 +37,33 @@ function distance(){
 function makeChange(){
 	let theForm = document.forms["change-form"];
 	let cents = theForm.elements[0].value;
-	let quarters = Math.floor(cents/25);
-	cents = cents % 25;
-	let dimes = Math.floor(cents/10);
-	cents = cents % 10;
-	let nickels = Math.floor(cents/5);
-	cents = cents % 5;
-	let pennies = cents;
+	if(cents == 0){
+		document.getElementById('cents').value = 0;  // Set empty input to 0
+	}
+	else{
+		document.getElementById('cents').value = cents.replace(/^0+/, '');  // Trim leading zeros
+	}
+	if(cents < 0){
+		document.getElementById('ans-q').innerHTML = "CENTS CAN'T BE NEGATIVE";
+		document.getElementById('ans-d').innerHTML = "";
+		document.getElementById('ans-n').innerHTML = "";
+		document.getElementById('ans-p').innerHTML = "";
+		formChanged(cents);
+	}
+	else{
+		let quarters = Math.floor(cents/25);
+		cents = cents % 25;
+		let dimes = Math.floor(cents/10);
+		cents = cents % 10;
+		let nickels = Math.floor(cents/5);
+		cents = cents % 5;
+		let pennies = cents;
 
-	document.getElementById('ans-q').innerHTML = "Quarters: " + quarters;
-	document.getElementById('ans-d').innerHTML = "Dimes: " + dimes;
-	document.getElementById('ans-n').innerHTML = "Nickels: " + nickels;
-	document.getElementById('ans-p').innerHTML = "Pennies: " + pennies;
+		document.getElementById('ans-q').innerHTML = "Quarters: " + quarters;
+		document.getElementById('ans-d').innerHTML = "Dimes: " + dimes;
+		document.getElementById('ans-n').innerHTML = "Nickels: " + nickels;
+		document.getElementById('ans-p').innerHTML = "Pennies: " + pennies;
+	}
 }
 
 function changeFormSubmitted(){  //  TODO:: Make formSubmitted() work for all potential calculators
